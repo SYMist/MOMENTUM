@@ -1,0 +1,26 @@
+
+
+[0]
+loginForm.addEventListener("submit", onLoginSubmit);
+
+-> submit이라는 이벤트에 대해 onLoginSubmit이라는 함수를 실행함.
+
+[1]
+function onLoginSubmit(event) {
+    -> onLoginSubmit이라는 함수에 event라는 인자를 넣고, 이 인자에 preventDefault()라는 메소드를 넣어 브라우저의 기본 동작을 막는다.
+        -> 인자를 아무것도 넣지 않으면, 메소드를 붙일 수 없다.  
+    event.preventDefault(); 
+        -> 브라우저의 기본 동작을 막아줌. 여기서 기본동작은 입력 후 새로고침되는 거
+            -> '새로고침'이라는 기본 동작을 막지 않으면 유저의 정보가 저장된 직후 바로 보이지 않게 된다.
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username)
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+    greeting.innerText = `Hello ${username}, keep going!`;
+}
+
+*JS는 단순히 함수만 실행시키는 것이 아니라, 함수를 실행시키는 동시에 그 함수에 첫번째 인자로 object를 넣어줌.
+ 이 obejct는 방금 일어난 event에 대한 정보를 담고 있음.
+
+
+
