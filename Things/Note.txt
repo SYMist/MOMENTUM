@@ -22,5 +22,14 @@ function onLoginSubmit(event) {
 *JS는 단순히 함수만 실행시키는 것이 아니라, 함수를 실행시키는 동시에 그 함수에 첫번째 인자로 object를 넣어줌.
  이 obejct는 방금 일어난 event에 대한 정보를 담고 있음.
 
+[2]
+setInterval(함수이름, 시간(ms단위));
+    '시간'만큼 '함수이름'을 실행함
+setInterval(함수이름, 시간(ms단위));
+    '시간'이 지난 후 '함수이름'을 실행함
+
+[3]
+x.padstart(최대길이, str);
+    x의 길이가 '최대길이'에 미치지 않으면 'str'을 추가함
 
 
