@@ -8,17 +8,22 @@
       <title>Momentum App</title>
     </head>
     <body>
+      <h2 id = 'clock'>00:00</h2>
       <form id = 'login-form' class = 'hidden'>
-        <input 
+        <input
           required
           maxlength = '15'
           type = 'text'
-          placeholder = 'What is your name'
+          placeholder = 'What is your name?'
         />
         <button type = 'submit'>Log In</button>
       </form>
-      <h2 id = 'clock'>00:00</h2>
       <h1 id = 'greeting' class = 'hidden'></h1>
+      <form id = 'todo-form'>
+        <input required type = 'text' placeholder = "Write to do and Press 'Enter'">
+      </form>
+      <ul id = 'todo-list'>
+      </ul>
       <div id = 'quote'>
         <span></span>
         <span></span>
@@ -27,5 +32,6 @@
       <script src = 'js/clock.js'></script>
       <script src = 'js/quotes.js'></script>
       <script src = 'js/background.js'></script>
+      <script src = 'js/todo.js'></script>
     </body>
   </html>

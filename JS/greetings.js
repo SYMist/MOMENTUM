@@ -2,7 +2,6 @@ const loginForm = document.querySelector('#login-form');
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
-
 const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY = 'username'
 // string만 저장된 변수는 대문자로 표기, 별로 중요하지 않은 것도 이렇게 표기
@@ -22,7 +21,7 @@ function paintGreetings() {
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-const savedUserName = localStorage.getItem("username");
+const savedUserName = localStorage.getItem(USERNAME_KEY);
 
 if (savedUserName === null) {
   // show the form
