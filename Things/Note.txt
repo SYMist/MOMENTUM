@@ -36,3 +36,10 @@ x.padstart(최대길이, str);
 forEach:
     forEach는 array의 각 item에 대한 function을 실행함
     array.forEach(function) = array의 item에 대해 function을 실행함
+    예)
+    function sayHello(item) {
+        console.log("This is the turn of",item)
+    }
+    parsedToDos.forEach(sayHello);
+    =
+    parsedToDos.forEach((item) => console.log("this is the turn of", item));
