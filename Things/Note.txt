@@ -32,4 +32,7 @@ setInterval(함수이름, 시간(ms단위));
 x.padstart(최대길이, str);
     x의 길이가 '최대길이'에 미치지 않으면 'str'을 추가함
 
-
+[4]
+forEach:
+    forEach는 array의 각 item에 대한 function을 실행함
+    array.forEach(function) = array의 item에 대해 function을 실행함
