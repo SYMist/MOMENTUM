@@ -21,7 +21,3 @@ function init() {
 };
 
 init();
-
-// body.style.filter = 'brightness(50%)';
-
-// 1~6의 숫자가 필요함
