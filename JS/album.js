@@ -7,10 +7,12 @@ function getRandomImage() {
   fetch(url)
     .then(response => response.json())
     .then(data => image.src = data.urls.regular)
-  randomImage.appendChild(image);
+    randomImage.appendChild(image);
 };
 
 getRandomImage();
+setInterval(getRandomImage, 30 * 1000);
+
 
 
 // 아래는 실패한 코드
