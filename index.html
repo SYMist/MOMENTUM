@@ -37,7 +37,29 @@
       <div id = 'random_image'>
         <img id="image" width="500" height="500" />
       </div>
-      <div id = 'news'></div>
+      <div class = 'music-player-container' id = 'music-player-container'>
+        <div class = 'info'>
+          <h4 id = 'title'>Music Player</h4>
+          <div class = 'progress-bar-container'>
+            <div class = 'progress-bar'></div>
+          </div>
+        </div>
+        <audio src = 'Assets/Music/Tattoos Together.mp3' id = 'audio'></audio>
+        <div class = 'image-container'>
+          <img src = 'Assets/CoverImage/Tattoos Together.jpeg' alt = 'cover-image' id = 'cover'>
+        </div>
+        <div class = 'navigation'>
+          <button id = 'prev' class = 'action-button'>
+            <i class = 'fas fa-backward'></i>
+          </button>
+          <button id = 'play' class = 'action-button action-button-big'>
+            <i class = 'fas fa-play'></i>
+          </button>
+          <button id = 'next' class = 'action-button'>
+            <i class = 'fas fa-forward'></i>
+          </button>
+        </div>
+      </div>
       <script src = 'js/greetings.js'></script>
       <script src = 'js/clock.js'></script>
       <script src = 'js/quotes.js'></script>
@@ -45,6 +67,6 @@
       <script src = 'js/todo.js'></script>
       <script src = 'js/weather.js'></script>
       <script src = 'js/album.js'></script>
-      <script src = 'js/news.js'></script>
+      <script src = 'js/songdata.js'></script>
     </body>
   </html>
