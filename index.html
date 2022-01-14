@@ -10,7 +10,9 @@
       <title>Momentum App</title>
     </head>
     <body>
+      <!-- Clock -->
       <h2 id = 'clock'>00:00</h2>
+      <!-- LogIn -->
       <form id = 'login-form' class = 'hidden'>
         <input
           required
@@ -21,26 +23,30 @@
         <button type = 'submit'>Log In</button>
       </form>
       <h1 id = 'greeting' class = 'hidden'></h1>
+      <!-- To-do List -->
       <form id = 'todo-form'>
         <input required type = 'text' placeholder = "Write to do and Press 'Enter'">
       </form>
       <ul id = 'todo-list'></ul>
       <button id = 'delete-all'>Delete All</button>
+      <!-- Weather -->
       <div id = 'weather'>
         <span></span>
         <span></span>
       </div>
+      <!-- Quotes -->
       <div id = 'quote'>
         <span></span><br>
         - <span></span>
       </div>
+      <!-- Random Image -->
       <div id = 'random_image'>
         <img id="image" width="500" height="500" />
       </div>
       <!-- Music Player -->
       <div class = 'music-player-container' id = 'music-player-container'>
         <div class = 'info'>
-          <h4 id = 'title'>Music Player</h4>
+          <h4 id = 'title'></h4>
           <div class = 'progress-bar-container' id = 'progress-bar-container'>
             <div class = 'progress-bar' id = 'progress-bar'></div>
           </div>
@@ -68,6 +74,5 @@
       <script src = 'js/todo.js'></script>
       <script src = 'js/weather.js'></script>
       <script src = 'js/album.js'></script>
-      <script src = 'js/musicplayer.js'></script>
     </body>
   </html>
