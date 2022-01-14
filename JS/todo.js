@@ -1,5 +1,5 @@
 const toDoForm = document.querySelector('#todo-form');
-const toDoInput = toDoForm.querySelector('input');
+const toDoInput = toDoForm.querySelector('#todo-form input');
 const toDoList = document.querySelector('#todo-list');
 const deleteAllBtn = document.querySelector('#delete-all');
 
@@ -21,13 +21,26 @@ function deleteToDo(event) {
   const li = event.target.parentElement;
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
-  saveToDos();
+  saveToDos();         
 }
 // 아래로 바꿔도 똑같이 작동한다.
 // function deleteTodo() {
 //   const li = this.parentElement;
 //   li.remove();
 // }
+
+function handleToDoSubmit(event) {
+  event.preventDefault();
+  const newTodo = toDoInput.value;
+  toDoInput.value = "";
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now(),
+  };
+  toDos.push(newTodoObj);
+  paintToDo(newTodoObj);
+  saveToDos();
+}
 
 function paintToDo(newTodo) {
   const li = document.createElement('li');
@@ -43,19 +56,6 @@ function paintToDo(newTodo) {
   // append는 맨 마지막에 있어야 함
 }
 
-function handleToDoSubmit(event) {
-  event.preventDefault();
-  const newTodo = toDoInput.value;
-  toDoInput.value = "";
-  const newTodoObj = {
-    text: newTodo,
-    id: Date.now(),
-  };
-  toDos.push(newTodoObj);
-  paintToDo(newTodoObj);
-  saveToDos();
-}
-
 toDoForm.addEventListener("submit", handleToDoSubmit);
 deleteAllBtn.addEventListener('click', deleteAll);
 
@@ -67,4 +67,3 @@ if (savedToDos) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
-

@@ -9,3 +9,5 @@ const IMAGE_CLASS_NAME = "bgimage"
 bgImage.src = `Assets/Img/${chosenImage}`;
 document.body.appendChild(bgImage);
 bgImage.classList.add(IMAGE_CLASS_NAME);
+
+
