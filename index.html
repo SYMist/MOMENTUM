@@ -11,40 +11,52 @@
     </head>
     <body>
       <!-- Clock -->
-      <h2 id = 'clock'>00:00</h2>
+      <div>
+        <h2 id = 'clock'>00:00</h2>
+      </div>
       <!-- LogIn -->
-      <form id = 'login-form' class = 'hidden'>
-        <input
-          required
-          maxlength = '15'
-          type = 'text'
-          placeholder = 'What is your name?'
-        />
-        <button type = 'submit'>Log In</button>
-      </form>
-      <h1 id = 'greeting' class = 'hidden'></h1>
+      <div>
+        <form id = 'login-form' class = 'hidden'>
+          <input
+            required
+            maxlength = '15'
+            type = 'text'
+            placeholder = 'What is your name?'
+          />
+          <button type = 'submit'>Log In</button>
+        </form>
+        <h1 id = 'greeting' class = 'hidden'></h1>
+      </div>
       <!-- To-do List -->
-      <form id = 'todo-form'>
-        <input 
-        required 
-        type = 'text' 
-        placeholder = "Write to do and Press 'Enter'">
-      </form>
-      <ul id = 'todo-list'></ul>
-      <button id = 'delete-all'>Delete All</button>
+      <div>
+        <form id = 'todo-form'>
+          <input 
+          required 
+          type = 'text' 
+          placeholder = "Write to do and Press 'Enter'">
+        </form>
+        <ul id = 'todo-list'></ul>
+        <button id = 'delete-all'>Delete All</button>
+      </div>
       <!-- Weather -->
-      <div id = 'weather'>
-        <span></span>
-        <span></span>
+      <div>
+        <div id = 'weather'>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <!-- Quotes -->
-      <div id = 'quote'>
-        <span></span><br>
-        - <span></span>
+      <div>
+        <div id = 'quote'>
+          "<span></span>".<br>
+          <span></span> said.
+        </div>
       </div>
       <!-- Random Image -->
-      <div id = 'random_image'>
-        <img id="image" width="500" height="500" />
+      <div>
+        <div id = 'random_image'>
+          <img id="image" width="500" height="500" />
+        </div>
       </div>
       <!-- Music Player -->
       <script src = 'js/greetings.js'></script>
