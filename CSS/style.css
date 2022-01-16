@@ -39,32 +39,35 @@ h2, #greeting {
     font-family: 'Questrial', sans-serif;
 }
 
-#item-wrap {
-    width: 630px;
+.item-wrap {
+    width: 1020px;
     height: 568px;
 }
 
-#album-container {
+.album-container {
     display: inline-block;
     width: 370px;
     height: 568px;
-
 }
 
-#album-content {
+.album-content {
     display: inline-block;
 }
 
-#todo-list {
+.clock-container {
+    display: inline-block;
+    width: 240px;
+}
+
+.clock-content {
+    position:relative;
+}
+
+.todolist-container {
+    display: inline-block;
+    width: 370px;
+}
+
+.todolist-content {
     font-family: 'Josefin Sans', sans-serif;
-}
-
-#clock-container {
-    display: inline-block;
-
-}
-
-#todolist-container {
-    display: inline-block;
-
 }
