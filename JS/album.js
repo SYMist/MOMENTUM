@@ -17,20 +17,21 @@ const randomImage = document.querySelector('#image');
 
 
 function getRandomImage() {
-  const url = `https://api.unsplash.com/photos/random?client_id=${IMAGE_API_KEY}`;
-  fetch(url)
-    .then((response) => {
-      if (response.status === 200) {
-        return response.json();
-        } else {
-          throw new Error("Now loading...")
-        }
-      })
-    .then(data =>
-       randomImage.src = data.urls.regular
-      )
-    .catch((error) => {console.log('error: ', error)}
-      );
+  // const url = `https://api.unsplash.com/photos/random?client_id=${IMAGE_API_KEY}`;
+  // fetch(url)
+  //   .then((response) => {
+  //     if (response.status === 200) {
+  //       return response.json();
+  //       } else {
+  //         throw new Error("Now loading...")
+  //       }
+  //     })
+  //   .then(data =>
+  //      randomImage.src = data.urls.regular
+  //     )
+  //   .catch((error) => {console.log('error: ', error)}
+  //     );
+  randomImage.src = 'Assets/Img/1.jpg'
 };
 
 getRandomImage();

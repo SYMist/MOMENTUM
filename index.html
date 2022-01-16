@@ -10,33 +10,18 @@
       <title>Momentum App</title>
     </head>
     <body>
-      <!-- Clock -->
-      <div id = 'clock-container'>
-        <h2 id = 'clock'>00:00</h2>
-      </div>
       <!-- LogIn -->
       <div id = 'login-container'>
         <form id = 'login-form' class = 'hidden'>
           <input
-            required
-            maxlength = '15'
-            type = 'text'
-            placeholder = 'What is your name?'
+          required
+          maxlength = '15'
+          type = 'text'
+          placeholder = 'What is your name?'
           />
           <button type = 'submit'>Log In</button>
         </form>
         <h1 id = 'greeting' class = 'hidden'></h1>
-      </div>
-      <!-- To-do List -->
-      <div id = 'todolist-container'>
-        <form id = 'todo-form'>
-          <input 
-          required 
-          type = 'text' 
-          placeholder = "Write to do and Press 'Enter'">
-        </form>
-        <button id = 'delete-all'>Delete All</button>
-        <ul id = 'todo-list'></ul>
       </div>
       <!-- Weather -->
       <div id = 'weather-container'>
@@ -45,17 +30,34 @@
           <span></span>
         </div>
       </div>
+      <div id = 'item-wrap'>
+        <!-- Random Image -->
+        <div id = 'album-container'>
+          <div id = 'album-content'>
+            <img id="image" width = '370', height = '568'/>
+          </div>
+        </div>
+        <!-- Clock -->
+        <div id = 'clock-container'>
+          <h2 id = 'clock'>00:00</h2>
+        </div>
+        <!-- To-do List -->
+        <div id = 'todolist-container'>
+          <form id = 'todo-form'>
+            <input 
+            required 
+            type = 'text' 
+            placeholder = "Write to do and Press 'Enter'">
+          </form>
+          <button id = 'delete-all'>Delete All</button>
+          <ul id = 'todo-list'></ul>
+        </div>
+      </div>
       <!-- Quotes -->
       <div id = 'quote-container'>
         <div id = 'quote'>
-          "<span></span>".<br>
-          <span></span> said.
-        </div>
-      </div>
-      <!-- Random Image -->
-      <div id = 'album-container'>
-        <div id = 'random_image'>
-          <img id="image" width="500" height="500" />
+          "<span></span>"
+          - <span></span>
         </div>
       </div>
       <script src = 'js/greetings.js'></script>

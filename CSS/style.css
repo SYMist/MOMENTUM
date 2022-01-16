@@ -25,6 +25,12 @@ h2, #greeting {
 #quote {
     color: rgb(196, 196, 196);
     font-family: 'Luxurious Roman', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
@@ -33,6 +39,32 @@ h2, #greeting {
     font-family: 'Questrial', sans-serif;
 }
 
+#item-wrap {
+    width: 630px;
+    height: 568px;
+}
+
+#album-container {
+    display: inline-block;
+    width: 370px;
+    height: 568px;
+
+}
+
+#album-content {
+    display: inline-block;
+}
+
 #todo-list {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+#clock-container {
+    display: inline-block;
+
+}
+
+#todolist-container {
+    display: inline-block;
+
 }
