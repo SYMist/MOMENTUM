@@ -31,7 +31,7 @@
         </div>
       </div>
       <!-- Item Wrap -->
-      <div class = 'item-wrap'>
+      <article class = 'item-wrap'>
         <!-- Album -->
         <div class = 'album-container'>
           <div class = 'album-content'>
@@ -44,16 +44,18 @@
         </div>
         <!-- To-do List -->
         <div id = 'todolist-container'>
-          <form id = 'todo-form' class = 'todolist-content'>
-            <input 
-            required 
-            type = 'text' 
-            placeholder = "Write to do and Press 'Enter'">
-          </form>
-          <button id = 'delete-all'>Delete All</button>
-          <ul id = 'todo-list'></ul>
+          <div class = 'todolist-content'>
+            <form id = 'todo-form'>
+              <input 
+              required 
+              type = 'text' 
+              placeholder = "Write to do and Press 'Enter'">
+            </form>
+            <button id = 'delete-all'>Delete All</button>
+            <ul id = 'todo-list'></ul>
+          </div>
         </div>
-      </div>
+      </article>
       <!-- Quotes -->
       <div id = 'quote-container'>
         <div id = 'quote'>
