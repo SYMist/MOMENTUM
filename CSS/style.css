@@ -19,7 +19,10 @@ body {
 
 h2, #greeting {
     font-family: 'Bebas Neue', cursive;
-    text-align: center;
+}
+
+#greeting {
+    margin-left: 10.15625%;
 }
 
 #quote {
@@ -51,6 +54,7 @@ h2, #greeting {
 .album-container {
     width: 370px;
     height: 568px;
+    padding: 10px;
 }
 
 .album-content {
@@ -61,22 +65,29 @@ h2, #greeting {
 .clock-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
     width: 240px;
     height: 568px;
+    background-color: grey;
+    background-clip: content-box;
+
 }
 
 .clock-content {
-    position:relative;
-    width: 200px;
-    height: 528px;
-    background-color: aqua;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 120px;
 }
 
 #todolist-container {
-    justify-content: center;
     width: 370px;
     height: 568px;
     display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .todolist-content {
