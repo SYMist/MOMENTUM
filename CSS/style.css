@@ -23,6 +23,8 @@ h2, #greeting {
 
 #greeting {
     margin-left: 10.15625%;
+    font-size: 120px;
+    margin-bottom: 0px;
 }
 
 #quote {
@@ -71,7 +73,6 @@ h2, #greeting {
     height: 568px;
     background-color: grey;
     background-clip: content-box;
-
 }
 
 .clock-content {
@@ -88,6 +89,8 @@ h2, #greeting {
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color: pink;
+    background-clip: content-box;
 }
 
 .todolist-content {
@@ -102,4 +105,14 @@ h2, #greeting {
 
 #todo-input {
     width: 300px;
+}
+
+#login-container {
+    display: flex;
+    justify-content:space-between;
+}
+
+#weather-container {
+    display: flex;
+    align-items: baseline;
 }

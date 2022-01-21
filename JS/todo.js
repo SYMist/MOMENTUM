@@ -73,3 +73,10 @@ if (savedTodoItem) {
   //할당된 애들은 객체의 형태를 띄고 있음.
   //array에 paintToDo 함수를 각각 씌워준다.
 }
+
+if (todoItemArray.length >= 19) {
+console.log('19!!')
+} else {
+  todoForm.classList.remove(HIDDEN);
+}
+
