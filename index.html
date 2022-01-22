@@ -30,33 +30,36 @@
           </div>
         </div>
       </div>
-      <!-- Item Wrap -->
-      <article class = 'item-wrap'>
-        <!-- Album -->
-        <div class = 'album-container'>
-          <div class = 'album-content'>
-            <img id="image" width = '370', height = '568'/>
+
+      <div id = 'glass'>
+        <!-- Item Wrap -->
+        <div id = 'item-wrap'>
+          <!-- Album -->
+          <div id = 'album-container'>
+            <div id = 'album-content'>
+              <img id="image" width = '600', height = '568'>
+            </div>
+          </div>
+          <!-- Clock -->
+          <div id = 'clock-container'>
+            <h2 id = 'clock-content'>00:00</h2>
+          </div>
+          <!-- To-do List -->
+          <div id = 'todolist-container'>
+            <div class = 'todolist-content'>
+              <form id = 'todo-form'>
+                <input 
+                required 
+                type = 'text' 
+                placeholder = "Write to do and Press 'Enter'"
+                id = 'todo-input'>
+              </form>
+              <button id = 'delete-all'>Delete All</button>
+              <ul id = 'todo-list'></ul>
+            </div>
           </div>
         </div>
-        <!-- Clock -->
-        <div class = 'clock-container'>
-          <h2 id = 'clock' class = 'clock-content'>00:00</h2>
-        </div>
-        <!-- To-do List -->
-        <div id = 'todolist-container'>
-          <div class = 'todolist-content'>
-            <form id = 'todo-form'>
-              <input 
-              required 
-              type = 'text' 
-              placeholder = "Write to do and Press 'Enter'"
-              id = 'todo-input'>
-            </form>
-            <button id = 'delete-all'>Delete All</button>
-            <ul id = 'todo-list'></ul>
-          </div>
-        </div>
-      </article>
+      </div>
       <!-- Quotes -->
       <div id = 'quote-container'>
         <div id = 'quote'>
