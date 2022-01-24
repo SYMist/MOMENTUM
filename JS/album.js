@@ -29,7 +29,7 @@ function getRandomImage() {
 };
 
 getRandomImage();
-setInterval(getRandomImage, 30 * 1000);
+setInterval(getRandomImage, 60 * 1000);
 
 
 
